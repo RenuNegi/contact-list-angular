@@ -14,7 +14,6 @@ export class ContactDetailListServiceService {
   }
 
   getContactList(): Observable<Contact[]> {
-    console.log(this.dataList);
     return of(this.dataList);
   }
 
@@ -23,13 +22,10 @@ export class ContactDetailListServiceService {
   }
 
   updateContact(contact: Contact): void {
-    console.log(contact);
     const objIndex = this.dataList.findIndex((obj => obj.id === contact.id));
-    if (objIndex > 0) {
+    if (objIndex > -1) {
       this.dataList[objIndex] = contact;
     }
-
-    console.log(this.dataList);
   }
 
   getUniqueId(): number {
@@ -38,7 +34,6 @@ export class ContactDetailListServiceService {
 
   addContact(contact: Contact): void {
     this.dataList.push(contact);
-    console.log(this.dataList);
   }
 
   deleteContact(id: number): void {
