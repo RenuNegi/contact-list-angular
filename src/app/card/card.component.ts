@@ -20,7 +20,7 @@ export class CardComponent implements OnInit {
   }
 
   onDeleteClick(): void {
-    if (window.confirm('Do you really want to delete?')) {
+    if (window.confirm(`Do you really want to delete ${this.cardDetails.firstName}'s contact?`)) {
       this.contactService.deleteContact(this.cardDetails.id);
     }
 
