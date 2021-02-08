@@ -21,7 +21,7 @@
                 phone number</span>
         </label>
         <div class="center pad-top20">
-            <button class="buttonGeneric" type="submit" [disabled]='!contactForm.valid'>Submit</button>
+            <button class="buttonGeneric" type="submit" [disabled]='!contactForm.valid' [attr.aria-label]="!contactForm.valid ? 'please fill out all the required form details to enable the submit button': null">Submit</button>
         </div>
 
 
