@@ -1,0 +1,32 @@
+<section class="pad-top50 addContactContainer">
+
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmitclick()" class="row">
+        <label class="col-md-3">First Name *
+            <input formControlName="firstName" placeholder="FirstName" />
+            <span *ngIf='firstName?.errors?.required && firstName?.touched' class="errorMsg">Please provide a first
+                name</span>
+        </label>
+        <label class="col-md-3">Last Name:
+            <input formControlName="lastName" placeholder="LastName" />
+        </label>
+        <label class="col-md-3">Email *:
+            <input formControlName="email" placeholder="Email" />
+            <span *ngIf='(email?.errors?.required || email?.errors?.email) && email?.touched' class="errorMsg">Please
+                provide valid email id</span>
+        </label>
+        <label class="col-md-3">Phone *:
+            <input formControlName="phone" placeholder="PhoneNumber" />
+            <span *ngIf='(phoneNumber?.errors?.required || phoneNumber?.errors?.minlength) && phoneNumber?.touched'
+                class="errorMsg">Please provide
+                phone number</span>
+        </label>
+        <div class="center pad-top20">
+            <button class="buttonGeneric" type="submit" [disabled]='!contactForm.valid'>Submit</button>
+        </div>
+
+
+    </form>
+
+
+
+</section>

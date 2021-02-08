@@ -1,0 +1,14 @@
+<div class="center">
+    <h1>{{title}}</h1>
+</div>
+<div class="pad-top50">
+    <div class="addButton_parent"><button class="addButton" routerLink="/add-contact">Add Contact</button></div>
+
+    <ul class="row">
+        <li *ngFor="let list of contacts" class="card-blocks col-md-3 col-md-5">
+
+            <app-card [cardDetails]="list"></app-card>
+        </li>
+
+    </ul>
+</div>

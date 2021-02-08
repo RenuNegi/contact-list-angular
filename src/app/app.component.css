@@ -1,0 +1,27 @@
+/* AppComponent's private CSS styles */
+.mainContainer{
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left:auto;
+}
+
+  .dashboard-link {
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #eee;
+    border-radius: 4px;
+  }
+   .dashboard-link:visited, a:link {
+    color: #334953;
+  }
+   .dashboard-link:hover {
+    color: #039be5;
+    background-color: #cfd8dc;
+  }
+   .dashboard-link.active {
+    color: #039be5;
+  }

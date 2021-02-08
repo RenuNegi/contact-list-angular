@@ -1,0 +1,12 @@
+<div class="homeBtnLayout margn-btm30">
+    <button class="buttonGeneric" (click)="backButton()">Home</button>
+</div>
+
+<div class="center">
+    <h1>{{title}}</h1>
+</div>
+<div *ngIf='showSuccess' class="successMsgContainer">
+    <span class="success-msg" role="alert" aria-live="polite">{{contactDataFromEvent.firstName}} details updated!</span>
+</div>
+
+<app-form-contact [contact]="contactData" (formSubmit)="onUpdateClick($event)"></app-form-contact>

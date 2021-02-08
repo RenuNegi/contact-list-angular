@@ -1,0 +1,94 @@
+.nav-links{
+    display:flex;
+    justify-content: space-between;
+}
+.nav-links a{
+    color:#333;
+    cursor: pointer;
+}
+.card-blocks{
+	
+    background-color:#00CCCC;
+    font-size:18px;
+    padding: 25px;
+    color:#333;
+	border-radius: 15px;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+	text-align: center;
+	-webkit-transition: .1s ease-in-out;
+	transition: .1s ease-in-out;
+}
+	.card-blocks:first-of-type{
+		margin-right: 25px;
+	}
+ 
+	.card-blocks:hover{
+		margin-top: -10px;
+		box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+	}
+.banner{
+	height: 100px;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+}
+.card-blocks .fa{
+    padding-right:10px;
+}
+.card-blocks .edit-icon{
+    display:block;
+    text-align: end;
+    padding-bottom: 10px;
+    color:#333;
+}
+.contact-name{
+    font-size:20px;
+}
+h3{
+    font-size: 16px;
+}
+
+.avatar{
+height: 100px;
+width: 100px;
+margin: auto;
+background-size: cover;
+background-position: center;
+background-color: #F1F1F1;
+border-radius: 100%;
+}
+.avatar span{
+    display: block;
+    height: 100%;
+    padding-top: 33%;
+    font-weight: bold;
+    font-size: 25px;
+}
+.expandCollapseBtn{
+    width: 140px;
+    height: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline-offset:2px;
+    margin-top:10px;
+}
+
+.expandCollapseBtn:hover {
+    box-shadow: #4d94ff;
+  }
+.delete-contact{
+    text-decoration: none;
+    background-color: transparent;
+    color: #333;
+    border-color: transparent;
+    font-size: 18px;
+}

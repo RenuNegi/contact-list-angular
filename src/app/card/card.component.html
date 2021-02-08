@@ -1,0 +1,26 @@
+<div class="card-blocks">
+
+    <div class="nav-links"> <a routerLink="/detail/{{cardDetails.firstName}}" class="edit-icon" aria-label="edit contact"><i
+                class="fas fa-edit" aria-hidden="true"></i></a>
+        <button class="delete-contact" tabindex="0" aria-label="delete contact" (click)="onDeleteClick()">
+            <i class="fas fa-trash-alt"></i></button>
+    </div>
+    <div class="banner">
+        <div class="avatar"><span>{{cardDetails.firstName | initials | uppercase}} {{cardDetails.lastName | initials |
+                uppercase}}</span></div>
+    </div>
+    <h3 class="contact-name pad-top20">{{cardDetails.firstName}} {{cardDetails.lastName}}</h3>
+    <h3><i class="fa fa-envelope" aria-hidden="true"></i>{{cardDetails.email}}</h3>
+
+    <button class="expandCollapseBtn" (click)="showMyContainer=!showMyContainer" [attr.aria-expanded]="showMyContainer"
+        aria-control="expandedControl">{{showMyContainer
+        ? 'Show less' :
+        'Show more'}}</button>
+
+    <div *ngIf="showMyContainer" class="pad-top20" id="expandedControl">
+        <h3><i class="fa fa-phone" aria-hidden="true"></i>{{cardDetails.phone}}</h3>
+    </div>
+
+
+
+</div>

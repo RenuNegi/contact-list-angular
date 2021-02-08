@@ -1,1 +1,130 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+strong,
+sub,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+section,
+ {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box; }
+
+body{
+    font-family: 'Open Sans',serif;
+    overflow-x: hidden;
+    max-width: 1280px;
+    margin:0 auto;
+}
+.center{
+    text-align:center;
+}
+.pad-top50{
+    padding-top:50px;
+}
+.pad-top20{
+    padding-top:20px;
+}
+.pad-btm20{
+    padding-bottom: 20px;
+}
+.margn-btm30{
+    margin-bottom: 30px;
+}
+h1 {
+    font-size: 3.2em;
+    margin-bottom: 0;
+    text-align:center;
+  }
+  h1, h2{
+       color:#004d4d;
+  }
+  button{
+      cursor: pointer;
+  }
+.buttonGeneric{
+    width: 160px;
+    height: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #3F3F48;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline-offset:2px;
+}
+
+.buttonGeneric:hover {
+    box-shadow: #4d94ff;
+  }
+form{
+    font-size: 16px;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    width:100%;
+}
+label {
+    padding:20px 20px 20px 0;
+   color:  #004d4d;
+   font-weight: bold;
+ }
+
+  input{
+    height: 2em;
+    font-size: 1em;
+    padding-left: .4em;
+    border: 1px solid;
+    display: block;
+  }
+  
+  .ng-invalid.ng-touched{
+    border-color:red;
+}
+.errorMsg{
+    color:red;
+    margin-top:5px;
+    display:block;
+}
+button:disabled {
+    background-color: #eee;
+    color: #ccc;
+    cursor: auto;
+  }
+  .homeBtnLayout{
+    text-align: right;
+    padding-right: 40px;
+ }
+ .successMsgContainer{
+    padding-top:40px;
+    width: 100%;
+    text-align: center;
+ }
+ .successMsgContainer .success-msg{
+    font-size: 25px;
+    color: #004d4d;
+ }
+ 
